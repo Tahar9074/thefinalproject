@@ -1,0 +1,35 @@
+.ProfessionalNavbar {
+    background-color: #ffffff; /* Set your desired background color */
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navbar brand styling */
+  .NavbarBrand {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Navbar links styling */
+  .NavItem, .NavLink {
+    color: #fff;
+    font-size: 1rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .NavItem:hover .NavLink {
+    color: #f39c12; /* Change to your desired hover color */
+  }
+  
+  /* Dropdown styling */
+  .DropdownToggle {
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  /* Collapse animation */
+  .Collapse {
+    transition: height 0.3s ease;
+}

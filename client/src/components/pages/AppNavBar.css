@@ -1,0 +1,43 @@
+/* AppNavBar.css */
+
+/* Style for the main Navbar */
+.navbar-main {
+    background-color: #343a40; /* Dark background color */
+    padding: 10px 0;
+  }
+  
+  /* Style for the search Navbar */
+  .navbar-search {
+    background-color: #007bff; /* Primary color for the search bar */
+  }
+  
+  /* Style for the NavbarBrand */
+  .navbar-brand {
+    color: #ffffff; /* Text color */
+    font-size: 1.5rem; /* Adjust the font size as needed */
+  }
+  
+  /* Style for the form inputs and button */
+  .form-inline {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-control {
+    margin-right: 10px;
+  }
+  
+  .btn-outline-success {
+    color: #28a745; /* Text color for the button */
+    border-color: #28a745; /* Border color for the button */
+  }
+  
+  .btn-outline-success:hover {
+    color: #ffffff; /* Text color on hover */
+    background-color: #28a745; /* Background color on hover */
+  }
+
+  .Navnav{
+    display: flex;
+    justify-content: flex-end;
+  }

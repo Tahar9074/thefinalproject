@@ -1,0 +1,69 @@
+/* Home.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .welcome-section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .welcome-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .features {
+    margin-top: 40px;
+  }
+  
+  .feature-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .feature-item {
+    margin-bottom: 40px;
+  }
+  
+  .feature-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #333; /* Adjust the color based on your design */
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .feature-description {
+    font-size: 16px;
+    color: #666; /* Adjust the color based on your design */
+  }
+  .feature-item {
+    margin-bottom: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .feature-item:hover {
+    transform: scale(1.02);
+  }
+  
+  .feature-link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: #901111; /* Adjust the color based on your design */
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .feature-description {
+    font-size: 16px;
+    color: #666666; /* Adjust the color based on your design */
+  }

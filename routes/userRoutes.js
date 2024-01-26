@@ -49,7 +49,7 @@ return res.send({msg:"bad credentials !"})
 const payload={
     id:user._id
 }
-const token=jwt.sign(payload,"fghgdf",{expiresIn:"7 days"})
+const token=jwt.sign(payload,"tooook",{expiresIn:"7 days"})
 
 res.send({msg:`Si ${user.name} is connected`,user,token})
 

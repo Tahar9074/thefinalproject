@@ -6,6 +6,12 @@ import Dashboard from './components/pages/Dashboard';
 import Home from './components/pages/Home';
 import { useDispatch,useSelector } from 'react-redux';
 import { getAuthUser } from './redux/actions';
+import Navigbar from './components/pages/Navigbar';
+import Services from './components/pages/Services';
+import About from './components/pages/About';
+import AvailableCars from './components/pages/AvailableCars';
+import Conditions from './components/pages/Conditions';
+
 function App() {
   const dispatch=useDispatch()
   const getAuth=()=>{
@@ -15,7 +21,12 @@ function App() {
   const isAuth=useSelector((state)=>state.isAuth)
   return (
     <div className="App">
+      
+      <Navigbar />
     <AppNavBar />
+  
+   
+    
     {isAuth &&
     <Routes>
       <Route path="/Dashboard" element={<Dashboard/>} />
@@ -23,7 +34,10 @@ function App() {
         }
       <Routes>
   <Route path="/" element={<Home/>} />
-  
+  <Route path="/OurServices" element={<Services/>}/>
+  <Route path="/About" element={<About/>}/>
+  <Route path='/AvailableCars' element={<AvailableCars/>}/>
+  <Route path='/Conditions' element={<Conditions/>}/>
 </Routes>
   
 

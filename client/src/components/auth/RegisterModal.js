@@ -34,8 +34,8 @@ toggle()
 
   return (
     <div>
-         <Button color="danger" onClick={toggle}>
-register      </Button>
+         <Button color="info" outline onClick={toggle}>
+Register      </Button>
       <Modal isOpen={modal} toggle={toggle} >
         <ModalHeader toggle={toggle}>Register</ModalHeader>
         <ModalBody>

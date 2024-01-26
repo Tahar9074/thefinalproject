@@ -1,0 +1,5 @@
+.logo1 {
+    max-width: 60%; /* Set the maximum width to the container width */
+    height: auto; /* Maintain the aspect ratio */
+    margin-bottom: 15px; /* Adjust the margin as needed */
+  }

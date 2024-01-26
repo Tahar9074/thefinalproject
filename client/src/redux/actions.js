@@ -1,4 +1,4 @@
-import { ERRORS, GET_AUTH_USER, LOGIN_USER, LOGOUT_USER, REGISTER_USER } from "./actionTypes"
+import { ERRORS, GET_AUTH_USER, LOGIN_USER, LOGOUT_USER, REGISTER_USER, GET_PRODUCTS } from "./actionTypes"
 import axios from "axios"
 export const registeUser=(formdata,navigate)=>async(dispatch)=>{
 try{
@@ -73,3 +73,28 @@ dispatch({
     type:LOGOUT_USER
 })
 }
+//product actions
+
+export const getProducts=()=>(dispatch)=>{
+    axios.get("http://localhost:5001/api/products/getall")
+    .then((res)=>dispatch({type:GET_PRODUCTS,payload:res.data}))
+    .catch((err)=>console.log(err))
+    }
+
+    export const deleteProduct=(idProduct)=>(dispatch)=>{
+        axios.delete("http://localhost:5001/api/products/delete/${idProduct")
+        .then((res)=>dispatch(getProducts()))
+        .catch((err)=>console.log(err))
+    }
+
+    export const addProduct=(newproduct)=>(dispatch)=>{
+        axios.post("http://localhost:5001/api/products/add",newproduct)
+        .then((res)=>dispatch(getProducts()))
+        .catch((err)=>console.log(err))
+    }
+
+    export const editProduct=(idProduct,editedproduct)=>(dispatch)=>{
+        axios.put("http://localhost:4001/api/products/edit/${idProduct}",editedproduct)
+        .then((res)=>dispatch(getProducts()))
+        .catch((err)=>console.log(err))
+    }

@@ -21,7 +21,7 @@ function LoginModal() {
   }
   return (
     <div>
-         <Button color="danger" onClick={toggle}>
+         <Button color="danger" outline onClick={toggle}>
 Login      </Button>
       <Modal isOpen={modal} toggle={toggle} >
         <ModalHeader toggle={toggle}>Login</ModalHeader>
